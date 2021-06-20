@@ -1,0 +1,293 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+icomoon custom icon - https://icomoon.io/app
+*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('lib/fonts/icomoon.eot?2mrlv4');
+  src:  url('lib/fonts/icomoon.eot?2mrlv4#iefix') format('embedded-opentype'),
+    url('lib/fonts/icomoon.ttf?2mrlv4') format('truetype'),
+    url('lib/fonts/icomoon.woff?2mrlv4') format('woff'),
+    url('lib/fonts/icomoon.svg?2mrlv4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-toss:before {
+  content: "\e900";
+  color: #0050ff;
+}
+
+
+
+
+/*
+Typography
+*/
+
+#material .display {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 400;
+}
+#material .headline {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+}
+#material .title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+#material .subheading {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+#material .body-bold {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+#material .body {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+#material .shadow1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#material .shadow2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#material .shadow3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+#material .shadow4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#material .shadow5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.right {
+  float: right;
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+@media screen {
+  .no-screen {
+    display: none;
+  }
+}
+.page-break {
+  page-break-before: always;
+}
+/*
+Base design
+*/
+@media screen {
+  body {
+    background-color: #F2F1EF;
+  }
+}
+.container {
+  width: 900px;
+  background-color: #FFFFFF;
+  margin: 30px auto 50px auto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+@media print {
+  .container {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen {
+  .container {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  .container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+h1 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-top: 0.7em;
+  margin-bottom: 0;
+}
+h4 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 0.8em;
+  margin-bottom: 0;
+}
+a {
+  color: #0050FF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+i {
+  font-weight: 500;
+}
+/*
+chips
+*/
+span.chip,
+span.chip-yellow,
+span.chip-indigo,
+span.chip-green,
+span.chip-blue,
+span.chip-purple {
+  background-color: #757575;
+  color: white;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding: 0.2em 0.7em;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+span.chip-yellow {
+  background-color: #FFEB3B;
+  color: black;
+}
+span.chip-indigo {
+  background-color: #5C6BC0;
+}
+span.chip-green {
+  background-color: #0097A7;
+}
+span.chip-blue {
+  background-color: #0288D1;
+}
+span.chip-purple {
+  background-color: #AB47BC;
+}
+/*
+header
+*/
+.header {
+  padding-left: 2em;
+  padding-right: 2em;
+  overflow: hidden;
+}
+@media screen {
+  .header {
+    background-color: #0050FF;
+    color: white;
+  }
+}
+@media print {
+  .header {
+    margin-bottom: -1.5em;
+  }
+}
+.header small {
+  font-size: 65%;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media screen {
+  .header small {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+/*
+Content
+*/
+.content {
+  position: relative;
+  padding: 0 2em 0 2em;
+  overflow: auto;
+}
+.content hr {
+  margin: 1.5em -2em 1em -2em;
+  border: 0;
+  height: 1px;
+  background: #E0E0E0;
+}
+.content strong {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+.content > ul {
+  padding-left: 20px;
+  margin-top: 0.7em;
+}
+.content > ul > li {
+  margin: 0 0 1.1em;
+}
+.content > ul.dense > li {
+  margin: 0 0 0;
+}
+.content > ul ul {
+  padding-left: 0.5em;
+  list-style: none;
+}
+.content > ul ul ul {
+  padding-left: 1em;
+  list-style: square;
+}
+.content > ul ul ul li {
+  margin: 0;
+}
+.content small {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.55);
+}
+.content footer {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.55);
+  float: right;
+  text-align: center;
+  height: 3em;
+}
+@media print {
+  .content footer {
+    margin-right: -2em;
+  }
+}
